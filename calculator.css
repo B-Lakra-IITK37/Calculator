@@ -1,0 +1,93 @@
+.container{
+    background-color: rgb(46, 73, 23);
+    background-position: center;
+}
+.calculator{
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    
+    padding-top: 90px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:308px;
+  
+}
+/* .calculator p{
+    border: 2px solid black;
+} */
+.button{
+    border: none;
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    padding: 10px;
+    text-align: center;
+    position:relative;
+}
+.button:hover{
+    opacity: 70%;
+}
+#x{
+    background-color: #d0cecc;
+    position: relative;
+    left: 2px;
+}
+#clearAll{
+    background-color: #d0cecc;
+}
+#cent{
+    background-color: #d0cecc;
+    position:relative;
+    right: 6px;
+}
+#plus{
+  
+    background-color:#3fcabb;
+}
+#minus{
+    background-color: #fa8989;
+    position:relative;
+    top: 9px;
+}
+#product{
+    background-color: #ff9001b3;
+    position:relative;
+    top: 7px;
+}
+#divide{
+    background-color: #6c8fe3;
+    position:relative;
+    top: 6px;
+}
+#equal{
+    background-color: #c187de;
+    position:relative;
+    top: 4px;
+}
+.number .button{
+    background-color: black;
+    margin: 5px;
+    color: white;
+    align-self: center;
+    
+}
+.button:active{
+    
+    animation: shrink 0.1s ease-out 0s 1 forwards; 
+}
+@keyframes shrink {
+    from{
+        width:50px;
+    height: 50px;
+    border-radius:50%;
+    }
+    to{
+        width:40px;
+    height: 40px;
+    border-radius:50%;
+    }
+}
